@@ -1,0 +1,19 @@
+<h1>To Do List </h1>
+
+<h2>Title :</h2>
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Title..." type="text" name="title" [(ngModel)]="Title">
+    </mat-form-field>
+
+<br>
+
+<h2>Content :</h2>
+<mat-form-field class="example-full-width">
+    <textarea matInput placeholder="Content..." rows="5" name="content" [(ngModel)]="Content"></textarea>
+  </mat-form-field>
+</form>
+<br>
+
+<button mat-raised-button color="primary" (click)="onAddPost()">Save Post</button>
+<br>
